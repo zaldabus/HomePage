@@ -8,7 +8,36 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <div class="row">
 
+    <div class="nav-bar">
+      <ul class="nav nav-pills nav-stacked">
+        <li>
+          <%= image_tag "http://www.gravatar.com/avatar/655768ee1f9b5595ba157523e12622fc.png" %>
+          <h3>Ryan Beckman</h3>
+          <span>Web Developer</span>
+        </li>
+
+        <li><a href="#">Intro</a></li>
+
+        <li><a href="#">Projects</a></li>
+
+        <li><a href="#">About Me</a></li>
+
+        <li><a href="#">Contact</a></li>
+
+        <!-- <li>
+          links to LinkedIn, GitHub, Contact Form
+          Email: Beckman.Ryan@gmail.com
+          Github: github.com/zaldabus
+          Linkedin: linkedin.com/pub/ryan-beckman/7/249/b22
+        </li> -->
+      </ul>
+    </div>
+
+    <div class="main-content"><%= yield %></div>
+  </div>
+</div>
 </body>
 </html>
