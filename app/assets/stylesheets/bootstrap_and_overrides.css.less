@@ -60,7 +60,7 @@ body, html, .container, .row, .span3 {
 }
 
 .nav {
-  height: 100%;
+  height: 830px;
   padding: 20px 0;
   margin-right: 20px;
   color: white;
@@ -68,14 +68,31 @@ body, html, .container, .row, .span3 {
 }
 
 .nav > li > a {
-  padding: 20px;
+  padding: 20px 5px;
 }
 
 .sidebar-name {
   margin: 0;
 }
 
+.contact-buttons {
+  text-align: center;
+  padding-left: 20px
+}
 
+.contact-buttons > a {
+  font-size: 32px;
+  padding-right: 10px;
+}
+
+.contact-buttons > a > i {
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.contact-buttons > a > i:hover {
+  color: white;
+}
 
 // Main Content
 .main-content {
@@ -84,6 +101,7 @@ body, html, .container, .row, .span3 {
   width: 75%;
   margin-left: 250px;
   color: #888888;
+  border-right: 1px solid #424242;
 }
 
 .intro {
