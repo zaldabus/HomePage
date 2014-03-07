@@ -28,14 +28,18 @@
 //
 // Example:
 // @linkColor: #ff0000;
+body, html, .container, .row, .span3 {
+  height: 100%;
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
   color: #a7a7a7;
 }
 
-body, html, .container, .row, .span3 {
-  height: 100%;
-  font-size: 18px;
+body {
+  background: #f0f0f0;
 }
 
 .container {
@@ -69,7 +73,7 @@ body, html, .container, .row, .span3 {
 }
 
 .nav > li > a {
-  padding: 20px 5px;
+  padding: 20px 10px;
 }
 
 .sidebar-name {
@@ -102,33 +106,45 @@ body, html, .container, .row, .span3 {
 .main-content {
   background: #f0f0f0;
   height: 100%;
-  width: 75%;
   margin-left: 250px;
   color: #888888;
-  border-right: 1px solid #ff9933;
 }
 
 .intro {
   text-align: center;
   padding: 20px;
+  margin-left: 20px;
   border-bottom: 1px solid #ff9933;
 }
 
 .name {
-  color: black
+  color: black;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  margin-bottom: 40px;
+}
+
+.intro > p {
+  line-height: 200%;
+  margin-bottom: 40px;
 }
 
 .projects {
   padding: 20px;
+  margin-left: 20px;
   border-bottom: 1px solid #ff9933;
 }
 
 .about_me {
   padding: 20px;
+  margin-left: 20px;
   border-bottom: 1px solid #ff9933;
 }
 
 .contact_me {
   padding: 20px;
+  margin-left: 20px;
   border-bottom: 1px solid #ff9933;
 }
