@@ -174,12 +174,58 @@ h1 > a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edd100', endColorstr='#f4c730',GradientType=0 ); /* IE6-9 */
 }
 
+/*Projects*/
 .projects {
   padding: 20px;
   margin-left: 20px;
   border-bottom: 1px solid #ff9933;
 }
 
+.projects:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.meetup {
+	float: left;
+	width: 275px;
+	height: 325px;
+	background: white;
+	text-align: center;
+	margin-right: 25px;
+}
+
+.meetup > a {
+	text-decoration: none;
+	color: black;
+}
+
+.meetup > a > img {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.tictactoe {
+	float: left;
+	width: 275px;
+	height: 325px;
+	background: #ff9933;
+	text-align: center;
+	margin-right: 25px;
+}
+
+.tictactoe > a {
+	text-decoration: none;
+	color: white;
+}
+
+.tictactoe > a > img {
+	display: block;
+	margin-bottom: 15px;
+}
+
+/*About Me*/
 .about_me {
   padding: 20px;
   margin-left: 20px;
