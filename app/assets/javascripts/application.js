@@ -14,5 +14,4 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require underscore
-//= require ticTacToe
 //= require_tree .
