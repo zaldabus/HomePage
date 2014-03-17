@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ryanbeckman</title>
+  <%= javascript_include_tag "asteroids/moving_object" %>
+  <%= javascript_include_tag "asteroids/asteroid" %>
+  <%= javascript_include_tag "asteroids/game" %>
+  <%= javascript_include_tag "asteroids/ship" %>
+  <%= javascript_include_tag "asteroids/bullet" %>
+  <%= javascript_include_tag "asteroids/keymaster" %>
+</head>
+
+<body>
+  <style>
+    canvas {
+      border: 1px solid;
+      height: 500px;
+      width: 500px;
+    }
+  </style>
+
+  <canvas width="500" height="500" id="canvas"></canvas>
+
+  <script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+
+    AsteroidsGame.currentGame = new AsteroidsGame.Game(ctx)
+    AsteroidsGame.currentGame.start();
+  </script>
+</body>
+</html>
