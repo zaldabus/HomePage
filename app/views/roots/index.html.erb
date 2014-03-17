@@ -15,19 +15,19 @@
 
 <div class="projects">
   <h1><a id="projects">Projects</a></h1>
-  MeetupMini
-  www.meetupmini.com, github.com/zaldabus/MeetupClone
-
-  Asteroids
-  github.com/zaldabus/Asteroids
-  <div class="meetup">
+  <div class="meetup drop-shadow lifted">
 	  <%= link_to (image_tag "meetup.png", size: "275x275"), "http://www.meetupmini.com" %>
 	  <%= link_to "Meetup Mini", "http://www.meetupmini.com" %>
   </div>
-  
-  <div class="tictactoe">
+
+  <div class="tictactoe drop-shadow lifted">
 	  <%= link_to (image_tag "tictactoe.png", size: "275x275"), tictactoe_url %>
 	  <%= link_to "TicTacToe", tictactoe_url %>
+  </div>
+
+  <div class="asteroids drop-shadow lifted">
+	  <%= link_to (image_tag "asteroids.png", size: "275x275"), asteroids_url %>
+	  <%= link_to "Asteroids", tictactoe_url %>
   </div>
 
 </div>
@@ -62,32 +62,32 @@
 
 <div class="contact_me">
   <h1><a id="contact">Contact</a></h1>
-  
+
   <p>
 	I'm currently available for hire, feel free to contact me
 	for employment or other needs!
   </p>
-  
+
   <form action="<%= root_url %>" method="post">
   	<div class="sender-info">
-		<input 
-			type="text" 
-			name="mail[name]" 
+		<input
+			type="text"
+			name="mail[name]"
 			placeholder="Name">
-		
+
 		<input
 			type="text"
 			name="mail[email]"
 			placeholder="Email">
 	</div>
-	
+
 	<textarea
 		rows="10"
 		name="mail[message]"
 		placeholder="Message"></textarea>
-	
+
 	<input type="submit" value="Send Message">
-	  
+
   </form>
 
 </div>

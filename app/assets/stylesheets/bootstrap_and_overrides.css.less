@@ -176,7 +176,7 @@ h1 > a:hover {
 
 /*Projects*/
 .projects {
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
   margin-left: 20px;
   border-bottom: 1px solid #ff9933;
 }
@@ -187,23 +187,74 @@ h1 > a:hover {
 	clear: both;
 }
 
+.projects > h1 {
+  padding-bottom: 20px;
+}
+
+.drop-shadow {
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.drop-shadow:before, .drop-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
+
+.lifted {
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.lifted:before, .lifted:after {
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  height: 20%;
+  max-width: 300px;
+  max-height: 100px;
+  -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.lifted:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
 .meetup {
 	float: left;
 	width: 275px;
 	height: 325px;
-	background: white;
+	background: #003ff0;
 	text-align: center;
-	margin-right: 25px;
+	margin-right: 30px;
+  margin-top: 20px;
 }
 
 .meetup > a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 .meetup > a > img {
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 23px;
 }
 
 .tictactoe {
@@ -212,7 +263,8 @@ h1 > a:hover {
 	height: 325px;
 	background: #ff9933;
 	text-align: center;
-	margin-right: 25px;
+	margin-right: 30px;
+  margin-top: 20px;
 }
 
 .tictactoe > a {
@@ -221,6 +273,25 @@ h1 > a:hover {
 }
 
 .tictactoe > a > img {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.asteroids {
+	float: left;
+	width: 275px;
+	height: 325px;
+	background: #003ff0;
+	text-align: center;
+  margin-top: 20px;
+}
+
+.asteroids > a {
+	text-decoration: none;
+	color: white;
+}
+
+.asteroids > a > img {
 	display: block;
 	margin-bottom: 15px;
 }
