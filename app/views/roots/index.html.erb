@@ -4,7 +4,7 @@
 
   <p>
     I'm currently a web developer in the New York Area.
-    With experience using Ruby, Rails, RSpec/Capybara, SQL, HTML/CSS, JavaScript, Backbone.js, and more, I am available for a wide array of web development needs.
+    With experience using Ruby, Rails, RSpec/Capybara, SQL, HTML/CSS, JavaScript, Backbone.js, and more, I am available for wide array of web development needs.
   </p>
 
 
@@ -33,61 +33,81 @@
 </div>
 
 <div class="about_me">
-  <h1><a id="about_me">Resume</a></h1>
-  Technical Skills
-  Ruby, Ruby on Rails, Sinatra, CoffeeScript, RSpec, Capybara, Cucumber, Rack, HTML, CSS, Javascript, jQuery,  Backbone.js, PHP, MySQL, SQLite, PostgreSQL, Git, Basic, VB, C++, Adobe Suite, Microsoft Office, Windows, Mac, Linux
+	<h1><a id="about_me">About Me</a></h1>
+	<h3>Technical Skills</h3>
+  
+	<p>
+		Ruby, Ruby on Rails, Sinatra, CoffeeScript, RSpec, Capybara, Cucumber, Rack, HTML, CSS, Javascript, jQuery,  Backbone.js, PHP, MySQL, SQLite, PostgreSQL, Git, Basic, VB, C++, Adobe Suite, Microsoft Office, Windows, Mac, Linux
+	</p>
 
-  Unscramble – Tokyo, Japan
-  Software Developer (Jan 2013 – Mar 2013)
+	<h3>Recent Experience</h3>
+		<ul>
+			<li>
+				Unscramble – Tokyo, Japan
+				Software Developer (Jan 2013 – Mar 2013)
+			</li>
 
-  Q-Tec – Tokyo, Japan
-  International Coordinator (Jun 2012 – Dec 2012)
+			<li>
+				Q-Tec – Tokyo, Japan
+				International Coordinator (Jun 2012 – Dec 2012)
+			</li>	
 
-  Adept Group – Tokyo, Japan
-  Associate Consultant (Jan 2012 – May 2012)
-
-
-  Education
-  University of California Los Angeles (UCLA) – Los Angeles, CA
-  B.S. in Business-Economics minor in Accounting, 2004-2009
-  Major GPA: 3.9/4, Overall GPA: 3.6/4
-
-  Sophia University – Tokyo, Japan
-  Education Abroad Program, 2006-2007
+		  <li>
+				Adept Group – Tokyo, Japan
+			  Associate Consultant (Jan 2012 – May 2012)
+			</li>
+		</ul>	
 
 
-  Certification
-  Japanese Language Proficiency Test (日本語能力試験) Level 2 (二級), 2009
+  <h3>Education</h3>
+		<ul>
+		 <li>
+			 <p>University of California Los Angeles (UCLA) – Los Angeles, CA</p>
+			 <p>B.S. in Business-Economics minor in Accounting, 2004-2009</p>
+			 <p>Major GPA: 3.9/4, Overall GPA: 3.6/4</p>
+		 </li>
+
+		 <li>
+			 <p>Sophia University – Tokyo, Japan</p>
+			 <p>Education Abroad Program, 2006-2007</p>
+		 </li>
+		</ul> 
+
+
+  <h3>Certification</h3>
+  <span>Japanese Language Proficiency Test (日本語能力試験) Level 2 (二級), 2009</span>
 </div>
 
 <div class="contact_me">
   <h1><a id="contact">Contact</a></h1>
-
+  
   <p>
 	I'm currently available for hire, feel free to contact me
 	for employment or other needs!
   </p>
-
-  <form action="<%= roots_url %>" method="post">
+  
+  <form action="<%= root_url %>" method="post">
   	<div class="sender-info">
-		<input
-			type="text"
-			name="mail[name]"
+		<input 
+			type="text" 
+			name="mail[name]" 
 			placeholder="Name">
-
+		
 		<input
 			type="text"
 			name="mail[email]"
 			placeholder="Email">
 	</div>
-
+	
 	<textarea
 		rows="10"
 		name="mail[message]"
 		placeholder="Message"></textarea>
-
-	<input type="submit" value="Send Message">
-
+		
+	<div class="submit-button">
+		<input type="submit" value="Send Message">
+	</div>
+	  
   </form>
 
 </div>

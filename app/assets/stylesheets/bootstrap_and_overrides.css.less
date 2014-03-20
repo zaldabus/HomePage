@@ -143,17 +143,20 @@ h1 > a:hover {
 }
 
 .continue-button {
-  background-color: #febf01; /* Old browsers */
+  background: #febf01; /* Old browsers */
   background: -moz-linear-gradient(top,  #febf01 0%, #ff9933 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#febf01), color-stop(100%,#ff9933)); /* Chrome,Safari4+ */
-  background-color: -webkit-linear-gradient(top,  #febf01 0%,#ff9933 100%); /* Chrome10+,Safari5.1+ */
-  background-color: -o-linear-gradient(top,  #febf01 0%,#ff9933 100%); /* Opera 11.10+ */
+  background: -webkit-linear-gradient(top,  #febf01 0%,#ff9933 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #febf01 0%,#ff9933 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  #febf01 0%,#ff9933 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #febf01 0%,#ff9933 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febf01', endColorstr='#ff9933',GradientType=0 ); /* IE6-9 */
 
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+	transition: background .0.3s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out;
 
   width: 100px;
   color: white;
@@ -164,10 +167,10 @@ h1 > a:hover {
 }
 
 .continue-button:hover {
-  background-color: #edd100; /* Old browsers */
+  background: #edd100; /* Old browsers */
   background: -moz-linear-gradient(top,  #edd100 0%, #f4c730 100%); /* FF3.6+ */
-  background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edd100), color-stop(100%,#f4c730)); /* Chrome,Safari4+ */
-  background-color: -webkit-linear-gradient(top,  #edd100 0%,#f4c730 100%); /* Chrome10+,Safari5.1+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edd100), color-stop(100%,#f4c730)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #edd100 0%,#f4c730 100%); /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(top,  #edd100 0%,#f4c730 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  #edd100 0%,#f4c730 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #edd100 0%,#f4c730 100%); /* W3C */
@@ -303,8 +306,57 @@ h1 > a:hover {
   border-bottom: 1px solid #ff9933;
 }
 
+
+/*Contact Me*/
 .contact_me {
   padding: 20px;
   margin-left: 20px;
   border-bottom: 1px solid #ff9933;
+}
+
+.contact_me > h1 {
+	padding: 20px;
+}
+
+.contact_me > p {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.sender-info {
+	width: 100%;
+}
+
+.sender-info > input[type="text"] {
+	width: 48%;
+	height: 40px;
+}
+
+.contact_me > form > textarea {
+	width: 98.3%;
+}
+
+.submit-button {
+	width: 300px;
+	margin: auto;
+	padding-left: 85px;
+}
+
+.submit-button > input[type="submit"] {
+  color: white;
+  padding: 30px 50px;
+  margin: 20px auto 60px auto;
+	text-align: center;
+  border-radius: 10px;
+	background: #ff9933;
+	
+	transition: background .0.3s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out;
+}
+
+.submit-button > input[type="submit"]:hover {
+	background: #edd100;
 }
