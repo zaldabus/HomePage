@@ -1,4 +1,4 @@
-<div class="intro">
+<div class="intro" id="intro">
   <h1 class="name"><a id="intro">Ryan Beckman</a></h1>
   <h2 class="tagline">Web Developer: For Hire</h1>
 
@@ -13,7 +13,7 @@
   <div class="continue-button">Continue</div>
 </div>
 
-<div class="projects">
+<div class="projects" id="projects">
   <h1><a id="projects">Projects</a></h1>
   <div class="meetup drop-shadow lifted">
 	  <%= link_to (image_tag "meetup.png", size: "275x275"), "http://www.meetupmini.com" %>
@@ -32,10 +32,10 @@
 
 </div>
 
-<div class="about_me">
+<div class="about_me" id="about_me">
 	<h1><a id="about_me">About Me</a></h1>
 	<h3>Technical Skills</h3>
-  
+
 	<p>
 		Ruby, Ruby on Rails, Sinatra, CoffeeScript, RSpec, Capybara, Cucumber, Rack, HTML, CSS, Javascript, jQuery,  Backbone.js, PHP, MySQL, SQLite, PostgreSQL, Git, Basic, VB, C++, Adobe Suite, Microsoft Office, Windows, Mac, Linux
 	</p>
@@ -50,13 +50,13 @@
 			<li>
 				Q-Tec – Tokyo, Japan
 				International Coordinator (Jun 2012 – Dec 2012)
-			</li>	
+			</li>
 
 		  <li>
 				Adept Group – Tokyo, Japan
 			  Associate Consultant (Jan 2012 – May 2012)
 			</li>
-		</ul>	
+		</ul>
 
 
   <h3>Education</h3>
@@ -71,43 +71,43 @@
 			 <p>Sophia University – Tokyo, Japan</p>
 			 <p>Education Abroad Program, 2006-2007</p>
 		 </li>
-		</ul> 
+		</ul>
 
 
   <h3>Certification</h3>
   <span>Japanese Language Proficiency Test (日本語能力試験) Level 2 (二級), 2009</span>
 </div>
 
-<div class="contact_me">
+<div class="contact_me" id="contact">
   <h1><a id="contact">Contact</a></h1>
-  
+
   <p>
 	I'm currently available for hire, feel free to contact me
 	for employment or other needs!
   </p>
-  
+
   <form action="<%= root_url %>" method="post">
   	<div class="sender-info">
-		<input 
-			type="text" 
-			name="mail[name]" 
+		<input
+			type="text"
+			name="mail[name]"
 			placeholder="Name">
-		
+
 		<input
 			type="text"
 			name="mail[email]"
 			placeholder="Email">
 	</div>
-	
+
 	<textarea
 		rows="10"
 		name="mail[message]"
 		placeholder="Message"></textarea>
-		
+
 	<div class="submit-button">
 		<input type="submit" value="Send Message">
 	</div>
-	  
+
   </form>
 
 </div>

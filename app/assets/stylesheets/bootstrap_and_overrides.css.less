@@ -143,6 +143,8 @@ h1 > a:hover {
 }
 
 .continue-button {
+  cursor: pointer;
+  opacity: 1;
   background: #febf01; /* Old browsers */
   background: -moz-linear-gradient(top,  #febf01 0%, #ff9933 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#febf01), color-stop(100%,#ff9933)); /* Chrome,Safari4+ */
@@ -152,11 +154,11 @@ h1 > a:hover {
   background: linear-gradient(to bottom,  #febf01 0%,#ff9933 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febf01', endColorstr='#ff9933',GradientType=0 ); /* IE6-9 */
 
-	transition: background .0.3s ease-in-out;
-	-webkit-transition: background 0.3s ease-in-out;
-	-moz-transition: background 0.3s ease-in-out;
-	-o-transition: background 0.3s ease-in-out;
-	-ms-transition: background 0.3s ease-in-out;
+	transition: opacity .0.3s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out;
 
   width: 100px;
   color: white;
@@ -167,14 +169,7 @@ h1 > a:hover {
 }
 
 .continue-button:hover {
-  background: #edd100; /* Old browsers */
-  background: -moz-linear-gradient(top,  #edd100 0%, #f4c730 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edd100), color-stop(100%,#f4c730)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #edd100 0%,#f4c730 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #edd100 0%,#f4c730 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #edd100 0%,#f4c730 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #edd100 0%,#f4c730 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edd100', endColorstr='#f4c730',GradientType=0 ); /* IE6-9 */
+  opacity: 0.8;
 }
 
 /*Projects*/
@@ -302,6 +297,7 @@ h1 > a:hover {
 /*About Me*/
 .about_me {
   padding: 20px;
+  padding-bottom: 80px;
   margin-left: 20px;
   border-bottom: 1px solid #ff9933;
 }
@@ -345,18 +341,29 @@ h1 > a:hover {
 .submit-button > input[type="submit"] {
   color: white;
   padding: 30px 50px;
-  margin: 20px auto 60px auto;
+  margin: 10px auto 60px auto;
 	text-align: center;
   border-radius: 10px;
-	background: #ff9933;
-	
-	transition: background .0.3s ease-in-out;
-	-webkit-transition: background 0.3s ease-in-out;
-	-moz-transition: background 0.3s ease-in-out;
-	-o-transition: background 0.3s ease-in-out;
-	-ms-transition: background 0.3s ease-in-out;
+  border: none;
+  font-size: inherit;
+  opacity: 1;
+
+  background: #febf01; /* Old browsers */
+  background: -moz-linear-gradient(top,  #febf01 0%, #ff9933 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#febf01), color-stop(100%,#ff9933)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #febf01 0%,#ff9933 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #febf01 0%,#ff9933 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #febf01 0%,#ff9933 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #febf01 0%,#ff9933 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febf01', endColorstr='#ff9933',GradientType=0 ); /* IE6-9 */
+
+	transition: opacity .0.3s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out;
 }
 
 .submit-button > input[type="submit"]:hover {
-	background: #edd100;
+	opacity: 0.8;
 }
