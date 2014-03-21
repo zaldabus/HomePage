@@ -13,6 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require bootstrap
-//= require roots
-//= require underscore
+//= require asteroids/keymaster
+//= require asteroids/moving_object
+//= require asteroids/game
+//= require asteroids/asteroid
+//= require asteroids/ship
+//= require asteroids/bullet
+//= require asteroids/start

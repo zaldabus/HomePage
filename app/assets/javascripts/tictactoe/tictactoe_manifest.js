@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require bootstrap
-//= require roots
+//= require tictactoe/ticTacToe
+//= require tictactoe/newGame
 //= require underscore
